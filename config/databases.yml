@@ -1,0 +1,19 @@
+dev:
+  propel:
+    param:
+      classname: DebugPDO
+test:
+  propel:
+    param:
+      classname: DebugPDO
+all:
+  propel:
+    class: sfPropelDatabase
+    param:
+      classname: PropelPDO
+      dsn: 'mysql:host=localhost;dbname=ivan4ik_sandbox1'
+      username: ivan4ik_sandbox1
+      password: xakep123
+      encoding: utf8
+      persistent: true
+      pooling: true

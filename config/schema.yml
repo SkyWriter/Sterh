@@ -1,0 +1,68 @@
+propel:
+  citizenship:
+    id:             ~
+    name:           { type: varchar(64), required: true }
+  region:
+    id:             ~
+    name:           { type: varchar(64), required: true }
+  branch:
+    id:             ~
+    name:           { type: varchar(64), required: true }
+  speciality:
+    id:             ~
+    name:           { type: varchar(64), required: true }
+  job_type:
+    id:             ~
+    name:           { type: varchar(64), required: true }
+  worker:
+    id:             ~
+    surname:        { type: varchar(120), required: true }
+    name:           { type: varchar(80), required: true }
+    father:         { type: varchar(80) }
+    age:            { type: integer, required: true }
+    gender:         { type: integer, required: true }
+    citizenship_id: ~
+    region_id:      ~
+    address:        { type: varchar(255) }
+    phone:          { type: varchar(30) }
+    email:          { type: varchar(64) }
+    target_regions: { type: varchar(255) }
+    branch_id:      ~
+    speciality_id:  ~
+    salary:         { type: integer }
+    schedule:       { type: varchar(64) }
+    job_type_id:    ~
+    start_date:     { type: date }
+    need_place:     { type: integer }
+    has_permission: { type: integer }
+    need_registration: { type: integer }
+    languages:      { type: varchar(255) }
+    computer:       { type: varchar(255) }
+    additional_info: { type: longvarchar }
+    password:       { type: varchar(32) }
+  employer:
+    title:          { type: varchar(64), required: true }
+    contact_person: { type: varchar(128) }
+    address:        { type: varchar(255) }
+    phone:          { type: varchar(30) }
+    email:          { type: varchar(64) }
+    web:            { type: varchar(128) }
+    region_id:      ~
+    speciality_id:  ~
+    target_regions: { type: varchar(255) }
+    salary:         { type: integer }
+    how_many_needed: { type: integer }
+    schedule:       { type: varchar(64) }
+    start_date:     { type: date }
+    provide_place:  { type: integer }
+    description:    { type: longvarchar }
+    make_permission: { type: integer }
+    make_registration: { type: integer }
+    education:      { type: varchar(64) }
+    experience:     { type: varchar(255) }
+    computer:       { type: varchar(255) }
+    age_start:      { type: integer }
+    age_end:        { type: integer }
+    gender:         { type: integer }
+    additional_info: { type: longvarchar }
+    password:       { type: varchar(32) }
