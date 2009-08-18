@@ -1,103 +1,109 @@
+<h1>Добавленная анкета работодателя</h1>
+
 <table>
   <tbody>
     <tr>
-      <th>Title:</th>
+      <th>Наименование:</th>
       <td><?php echo $employer->getTitle() ?></td>
     </tr>
     <tr>
-      <th>Contact person:</th>
+      <th>Контактное лицо:</th>
       <td><?php echo $employer->getContactPerson() ?></td>
     </tr>
     <tr>
-      <th>Address:</th>
+      <th>Адрес:</th>
       <td><?php echo $employer->getAddress() ?></td>
     </tr>
     <tr>
-      <th>Phone:</th>
+      <th>Номер телефона:</th>
       <td><?php echo $employer->getPhone() ?></td>
     </tr>
     <tr>
-      <th>Email:</th>
+      <th>Адрес электронной почты:</th>
       <td><?php echo $employer->getEmail() ?></td>
     </tr>
     <tr>
-      <th>Web:</th>
+      <th>Адрес веб-сайта:</th>
       <td><?php echo $employer->getWeb() ?></td>
     </tr>
     <tr>
-      <th>Region:</th>
+      <th>Регион / город:</th>
       <td><?php echo $employer->getRegionId() ?></td>
     </tr>
     <tr>
-      <th>Speciality:</th>
+      <th>Специальность:</th>
       <td><?php echo $employer->getSpecialityId() ?></td>
     </tr>
     <tr>
-      <th>Target regions:</th>
+      <th>Регион(ы) РФ, в котором(ых) сотрудник будет работать:</th>
       <td><?php echo $employer->getTargetRegions() ?></td>
     </tr>
     <tr>
-      <th>Salary:</th>
+      <th>Заработная плата до:</th>
       <td><?php echo $employer->getSalary() ?></td>
     </tr>
     <tr>
-      <th>How many needed:</th>
+      <th>Необходимое количество работников:</th>
       <td><?php echo $employer->getHowManyNeeded() ?></td>
     </tr>
     <tr>
-      <th>Schedule:</th>
+      <th>График работы:</th>
       <td><?php echo $employer->getSchedule() ?></td>
     </tr>
     <tr>
-      <th>Start date:</th>
+      <th>Планируемая дата приема на работу:</th>
       <td><?php echo $employer->getStartDate() ?></td>
     </tr>
     <tr>
-      <th>Provide place:</th>
+      <th>Предоставляет ли организация жилье:</th>
       <td><?php echo $employer->getProvidePlace() ?></td>
     </tr>
     <tr>
-      <th>Description:</th>
+      <th>Описание вакансии:</th>
       <td><?php echo $employer->getDescription() ?></td>
     </tr>
     <tr>
-      <th>Make permission:</th>
+      <th>Будет ли организация оформлять разрешение на работу иностранному специалисту:</th>
       <td><?php echo $employer->getMakePermission() ?></td>
     </tr>
     <tr>
-      <th>Make registration:</th>
+      <th>Будет ли организация оформлять регистрацию по месту проживания иностранного специалиста:</th>
       <td><?php echo $employer->getMakeRegistration() ?></td>
     </tr>
     <tr>
-      <th>Education:</th>
+      <th>Образование:</th>
       <td><?php echo $employer->getEducation() ?></td>
     </tr>
     <tr>
-      <th>Experience:</th>
+      <th>Опыт работы:</th>
       <td><?php echo $employer->getExperience() ?></td>
     </tr>
     <tr>
-      <th>Computer:</th>
+      <th>Знание ПК:</th>
       <td><?php echo $employer->getComputer() ?></td>
     </tr>
     <tr>
-      <th>Age start:</th>
+      <th>Знание иностранных языков:</th>
+      <td><?php echo $employer->getLanguages() ?></td>
+    </tr>    
+    <tr>
+      <th>Возраст от:</th>
       <td><?php echo $employer->getAgeStart() ?></td>
     </tr>
     <tr>
-      <th>Age end:</th>
+      <th>Возраст до:</th>
       <td><?php echo $employer->getAgeEnd() ?></td>
     </tr>
     <tr>
-      <th>Gender:</th>
+      <th>Пол:</th>
       <td><?php echo $employer->getGender() ?></td>
     </tr>
     <tr>
-      <th>Additional info:</th>
+      <th>Дополнительная информация:</th>
       <td><?php echo $employer->getAdditionalInfo() ?></td>
     </tr>
     <tr>
-      <th>Password:</th>
+      <th>Пароль:</th>
       <td><?php echo $employer->getPassword() ?></td>
     </tr>
     <tr>
@@ -107,8 +113,10 @@
   </tbody>
 </table>
 
+<!-- 
 <hr />
 
 <a href="<?php echo url_for('employer/edit?id='.$employer->getId()) ?>">Edit</a>
 &nbsp;
 <a href="<?php echo url_for('employer/index') ?>">List</a>
+-->

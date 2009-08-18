@@ -34,7 +34,7 @@ class workerActions extends sfActions
 
     $this->processForm($request, $this->form);
 
-    $this->setTemplate('new');
+    $this->setTemplate('show');
   }
 
   public function executeEdit(sfWebRequest $request)

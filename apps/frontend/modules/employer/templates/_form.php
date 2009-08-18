@@ -9,16 +9,16 @@
     <tfoot>
       <tr>
         <td colspan="2">
-          &nbsp;<a href="<?php echo url_for('employer/index') ?>">Cancel</a>
+          &nbsp;<a href="<?php echo url_for('employer/index') ?>">Отменить</a>
           <?php if (!$form->getObject()->isNew()): ?>
-            &nbsp;<?php echo link_to('Delete', 'employer/delete?id='.$form->getObject()->getId(), array('method' => 'delete', 'confirm' => 'Are you sure?')) ?>
+            &nbsp;<?php echo link_to('Удалить', 'employer/delete?id='.$form->getObject()->getId(), array('method' => 'delete', 'confirm' => 'Вы уверены?')) ?>
           <?php endif; ?>
-          <input type="submit" value="Save" />
+          <input type="submit" value="Сохранить" />
         </td>
       </tr>
     </tfoot>
     <tbody>
-      <?php echo $form ?>
+      <?php echo $form; ?>
     </tbody>
   </table>
 </form>

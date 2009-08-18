@@ -10,10 +10,10 @@
  */
 class employerActions extends sfActions
 {
-  public function executeIndex(sfWebRequest $request)
+  /* public function executeIndex(sfWebRequest $request)
   {
     $this->employer_list = EmployerPeer::doSelect(new Criteria());
-  }
+  } */
 
   public function executeShow(sfWebRequest $request)
   {
@@ -23,7 +23,7 @@ class employerActions extends sfActions
 
   public function executeNew(sfWebRequest $request)
   {
-    $this->form = new EmployerForm();
+    $this->form = new EmployerForm(); 
   }
 
   public function executeCreate(sfWebRequest $request)
@@ -34,10 +34,10 @@ class employerActions extends sfActions
 
     $this->processForm($request, $this->form);
 
-    $this->setTemplate('new');
+    $this->setTemplate('show');
   }
 
-  public function executeEdit(sfWebRequest $request)
+  /* public function executeEdit(sfWebRequest $request)
   {
     $this->forward404Unless($employer = EmployerPeer::retrieveByPk($request->getParameter('id')), sprintf('Object employer does not exist (%s).', $request->getParameter('id')));
     $this->form = new EmployerForm($employer);
@@ -62,7 +62,7 @@ class employerActions extends sfActions
     $employer->delete();
 
     $this->redirect('employer/index');
-  }
+  } */
 
   protected function processForm(sfWebRequest $request, sfForm $form)
   {
@@ -71,7 +71,7 @@ class employerActions extends sfActions
     {
       $employer = $form->save();
 
-      $this->redirect('employer/edit?id='.$employer->getId());
+      $this->redirect('employer/show?id='.$employer->getId());
     }
   }
 }

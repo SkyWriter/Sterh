@@ -1,4 +1,4 @@
-<h1>Worker List</h1>
+<h1>Список анкет</h1>
 
 <table>
   <thead>

@@ -60,6 +60,7 @@ propel:
     make_registration: { type: integer }
     education:      { type: varchar(64) }
     experience:     { type: varchar(255) }
+    languages:      { type: varchar(255) }
     computer:       { type: varchar(255) }
     age_start:      { type: integer }
     age_end:        { type: integer }
