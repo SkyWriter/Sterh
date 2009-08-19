@@ -10,10 +10,10 @@
  */
 class employerActions extends sfActions
 {
-  /* public function executeIndex(sfWebRequest $request)
+  public function executeIndex(sfWebRequest $request)
   {
     $this->employer_list = EmployerPeer::doSelect(new Criteria());
-  } */
+  }
 
   public function executeShow(sfWebRequest $request)
   {

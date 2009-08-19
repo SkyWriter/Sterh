@@ -1,4 +1,4 @@
-<h1>Добавленная анкета работодателя</h1>
+<h1>Анкета работодателя</h1>
 
 <table>
   <tbody>
@@ -28,11 +28,11 @@
     </tr>
     <tr>
       <th>Регион / город:</th>
-      <td><?php echo $employer->getRegionId() ?></td>
+      <td><?php echo $employer->getRegion() ?></td>
     </tr>
     <tr>
       <th>Специальность:</th>
-      <td><?php echo $employer->getSpecialityId() ?></td>
+      <td><?php echo $employer->getSpeciality() ?></td>
     </tr>
     <tr>
       <th>Регион(ы) РФ, в котором(ых) сотрудник будет работать:</th>
@@ -56,7 +56,7 @@
     </tr>
     <tr>
       <th>Предоставляет ли организация жилье:</th>
-      <td><?php echo $employer->getProvidePlace() ?></td>
+      <td><?php echo $employer->getProvidePlaceText() ?></td>
     </tr>
     <tr>
       <th>Описание вакансии:</th>
@@ -64,11 +64,11 @@
     </tr>
     <tr>
       <th>Будет ли организация оформлять разрешение на работу иностранному специалисту:</th>
-      <td><?php echo $employer->getMakePermission() ?></td>
+      <td><?php echo $employer->getMakePermissionText() ?></td>
     </tr>
     <tr>
       <th>Будет ли организация оформлять регистрацию по месту проживания иностранного специалиста:</th>
-      <td><?php echo $employer->getMakeRegistration() ?></td>
+      <td><?php echo $employer->getMakeRegistrationText() ?></td>
     </tr>
     <tr>
       <th>Образование:</th>
@@ -96,27 +96,15 @@
     </tr>
     <tr>
       <th>Пол:</th>
-      <td><?php echo $employer->getGender() ?></td>
+      <td><?php echo $employer->getGenderText() ?></td>
     </tr>
     <tr>
       <th>Дополнительная информация:</th>
       <td><?php echo $employer->getAdditionalInfo() ?></td>
     </tr>
-    <tr>
-      <th>Пароль:</th>
-      <td><?php echo $employer->getPassword() ?></td>
-    </tr>
-    <tr>
-      <th>Id:</th>
-      <td><?php echo $employer->getId() ?></td>
-    </tr>
   </tbody>
 </table>
 
-<!-- 
 <hr />
 
-<a href="<?php echo url_for('employer/edit?id='.$employer->getId()) ?>">Edit</a>
-&nbsp;
-<a href="<?php echo url_for('employer/index') ?>">List</a>
--->
+<a href="<?php echo url_for('employer/index') ?>">К списку работодателей</a>

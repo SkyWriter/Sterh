@@ -37,7 +37,7 @@ class workerActions extends sfActions
     $this->setTemplate('show');
   }
 
-  public function executeEdit(sfWebRequest $request)
+  /* public function executeEdit(sfWebRequest $request)
   {
     $this->forward404Unless($worker = WorkerPeer::retrieveByPk($request->getParameter('id')), sprintf('Object worker does not exist (%s).', $request->getParameter('id')));
     $this->form = new WorkerForm($worker);
@@ -62,7 +62,7 @@ class workerActions extends sfActions
     $worker->delete();
 
     $this->redirect('worker/index');
-  }
+  } */
 
   protected function processForm(sfWebRequest $request, sfForm $form)
   {
@@ -71,7 +71,7 @@ class workerActions extends sfActions
     {
       $worker = $form->save();
 
-      $this->redirect('worker/edit?id='.$worker->getId());
+      $this->redirect('worker/show?id='.$worker->getId());
     }
   }
 }

@@ -1,110 +1,94 @@
+<h1>Анкета соискателя</h1>
+
 <table>
   <tbody>
     <tr>
-      <th>Id:</th>
-      <td><?php echo $worker->getId() ?></td>
+      <th>ФИО:</th>
+      <td><?php echo $worker->getSurname() ?> <?php echo $worker->getName() ?> <?php echo $worker->getFather() ?></td>
     </tr>
     <tr>
-      <th>Surname:</th>
-      <td><?php echo $worker->getSurname() ?></td>
-    </tr>
-    <tr>
-      <th>Name:</th>
-      <td><?php echo $worker->getName() ?></td>
-    </tr>
-    <tr>
-      <th>Father:</th>
-      <td><?php echo $worker->getFather() ?></td>
-    </tr>
-    <tr>
-      <th>Age:</th>
+      <th>Возраст:</th>
       <td><?php echo $worker->getAge() ?></td>
     </tr>
     <tr>
-      <th>Gender:</th>
-      <td><?php echo $worker->getGender() ?></td>
+      <th>Пол:</th>
+      <td><?php echo $worker->getGenderText(); ?></td>
     </tr>
     <tr>
-      <th>Citizenship:</th>
-      <td><?php echo $worker->getCitizenshipId() ?></td>
+      <th>Гражданство:</th>
+      <td><?php echo $worker->getCitizenship() ?></td>
     </tr>
     <tr>
-      <th>Region:</th>
-      <td><?php echo $worker->getRegionId() ?></td>
+      <th>Город / регион:</th>
+      <td><?php echo $worker->getRegion() ?></td>
     </tr>
     <tr>
-      <th>Address:</th>
+      <th>Адрес фактического проживания:</th>
       <td><?php echo $worker->getAddress() ?></td>
     </tr>
     <tr>
-      <th>Phone:</th>
+      <th>Телефон с кодом города:</th>
       <td><?php echo $worker->getPhone() ?></td>
     </tr>
     <tr>
-      <th>Email:</th>
+      <th>Адрес электронной почты:</th>
       <td><?php echo $worker->getEmail() ?></td>
     </tr>
     <tr>
-      <th>Target regions:</th>
+      <th>Ищет работу в регионах:</th>
       <td><?php echo $worker->getTargetRegions() ?></td>
     </tr>
     <tr>
-      <th>Branch:</th>
-      <td><?php echo $worker->getBranchId() ?></td>
+      <th>Отрасль:</th>
+      <td><?php echo $worker->getBranch() ?></td>
     </tr>
     <tr>
-      <th>Speciality:</th>
-      <td><?php echo $worker->getSpecialityId() ?></td>
+      <th>Специальность:</th>
+      <td><?php echo $worker->getSpeciality() ?></td>
     </tr>
     <tr>
-      <th>Salary:</th>
+      <th>Заработная плата от:</th>
       <td><?php echo $worker->getSalary() ?></td>
     </tr>
     <tr>
-      <th>Schedule:</th>
+      <th>График работы:</th>
       <td><?php echo $worker->getSchedule() ?></td>
     </tr>
     <tr>
-      <th>Job type:</th>
-      <td><?php echo $worker->getJobTypeId() ?></td>
+      <th>Тип работы:</th>
+      <td><?php echo $worker->getJobType() ?></td>
     </tr>
     <tr>
-      <th>Start date:</th>
+      <th>Может приступить к работе с:</th>
       <td><?php echo $worker->getStartDate() ?></td>
     </tr>
     <tr>
-      <th>Need place:</th>
-      <td><?php echo $worker->getNeedPlace() ?></td>
+      <th>Требуется ли проживание:</th>
+      <td><?php echo $worker->getNeedPlaceText() ?></td>
     </tr>
     <tr>
-      <th>Has permission:</th>
-      <td><?php echo $worker->getHasPermission() ?></td>
+      <th>Имеется ли у разрешение на работу:</th>
+      <td><?php echo $worker->getHasPermissionText() ?></td>
     </tr>
     <tr>
-      <th>Need registration:</th>
-      <td><?php echo $worker->getNeedRegistration() ?></td>
+      <th>Требуется ли оформление регистрации по месту пребывания в РФ:</th>
+      <td><?php echo $worker->getNeedRegistrationText() ?></td>
     </tr>
     <tr>
-      <th>Languages:</th>
+      <th>Знание иностранных языков:</th>
       <td><?php echo $worker->getLanguages() ?></td>
     </tr>
     <tr>
-      <th>Computer:</th>
+      <th>Знание компьютера:</th>
       <td><?php echo $worker->getComputer() ?></td>
     </tr>
     <tr>
-      <th>Additional info:</th>
+      <th>Дополнительная информация:</th>
       <td><?php echo $worker->getAdditionalInfo() ?></td>
-    </tr>
-    <tr>
-      <th>Password:</th>
-      <td><?php echo $worker->getPassword() ?></td>
     </tr>
   </tbody>
 </table>
 
 <hr />
 
-<a href="<?php echo url_for('worker/edit?id='.$worker->getId()) ?>">Edit</a>
-&nbsp;
-<a href="<?php echo url_for('worker/index') ?>">List</a>
+<a href="<?php echo url_for('worker/index') ?>">К списку соискателей</a>
