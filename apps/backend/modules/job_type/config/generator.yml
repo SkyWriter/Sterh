@@ -9,12 +9,12 @@ generator:
       name:    { name: Название}
     
     list:
-      title:  Типы работ
+      title:  Типы работы
       display: [=name]
       object_actions:
         _edit:        ~
         _delete:      ~
       
     edit:
-      title:  Добавление/редактирование типа работ
+      title:  Добавление/редактирование типа работы
       display: [name]

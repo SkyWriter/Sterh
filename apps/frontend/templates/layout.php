@@ -7,6 +7,12 @@
     <link rel="shortcut icon" href="/favicon.ico" />
   </head>
   <body>
+    <ul id="frontend-navigation">
+      <li><?php echo link_to('Соискатели', 'worker/index') ?></li>
+      <li><?php echo link_to('Заполнить анкету соискателя', 'worker/new') ?></li>
+      <li><?php echo link_to('Работодатели', 'employer/index') ?></li>
+      <li class="last"><?php echo link_to('Заполнить анкету работодателя', 'employer/new') ?></li>
+    </ul>
     <?php echo $sf_content ?>
   </body>
 </html>

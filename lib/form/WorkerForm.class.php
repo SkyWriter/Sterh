@@ -32,6 +32,8 @@ class WorkerForm extends BaseWorkerForm
       'choices'  => WorkerPeer::getGenderChoices(),
     ));
     
+    $this->widgetSchema['start_date'] = new sfWidgetFormJQueryDate();
+    
     $this->widgetSchema->setLabels(array( 
       'surname'    => 'Фамилия',
       'name' => 'Имя',

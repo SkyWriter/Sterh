@@ -30,6 +30,10 @@ all:
     param:
       generate_shortest_url:            true
       extra_parameters_as_query_string: true
+  request:
+    class: sfWebRequest
+    param:
+      relative_url_root: /stc
 
 #all:
 #  controller:

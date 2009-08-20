@@ -31,8 +31,10 @@ class EmployerForm extends BaseEmployerForm
       'expanded' => true,
       'choices'  => array(0 => 'Не важно', 1 => 'Мужской', 2 => 'Женский'),
     ));
+      
+    $this->widgetSchema['start_date'] = new sfWidgetFormJQueryDate();
     
-  $this->widgetSchema->setLabels(array( 
+    $this->widgetSchema->setLabels(array( 
       'title'    => 'Наименование',
       'contact_person'    => 'Контактное лицо',
       'address' => 'Адрес',

@@ -19,7 +19,7 @@
       
       <trans-unit id="4">
         <source>save and add</source>
-        <target>сохранить</target>
+        <target>сохранить и добавить</target>
       </trans-unit>
       
       <trans-unit id="5">
@@ -41,6 +41,41 @@
         <source>edit</source>
         <target>редактировать</target>
       </trans-unit>
+      
+      <trans-unit id="9">
+        <source>Username</source>
+        <target>Имя пользователя</target>
+      </trans-unit>
+      
+     <trans-unit id="10">
+        <source>Password</source>
+        <target>Пароль</target>
+      </trans-unit>
+      
+     <trans-unit id="11">
+        <source>Remember</source>
+        <target>Запомнить</target>
+      </trans-unit>
+      
+     <trans-unit id="12">
+        <source>sign in</source>
+        <target>войти</target>
+      </trans-unit>
+      
+     <trans-unit id="13">
+        <source>The username and/or password is invalid.</source>
+        <target>Имя пользователя и/или пароль неверны.</target>
+      </trans-unit>
+      
+     <trans-unit id="14">
+        <source>Required.</source>
+        <target>Обязательно.</target>
+      </trans-unit>  
+
+     <trans-unit id="15">
+        <source>Your modifications have been saved</source>
+        <target>Ваши изменения успешно сохранены</target>
+      </trans-unit>  
     </body>
   </file>
 </xliff>
