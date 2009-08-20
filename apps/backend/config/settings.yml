@@ -21,6 +21,7 @@ test:
 
 all:
   .settings:
+    i18n:                   on
     # Form security secret (CSRF protection)
     csrf_secret:       false     # Unique secret to enable CSRF protection or false to disable
 
@@ -30,6 +31,9 @@ all:
 
     # Cache settings
     lazy_cache_key:         on        # Delays creation of a cache key until after checking whether an action or partial is cacheable
+
+    standard_helpers:       [I18N, Partial, Cache, Form, jQuery]
+    default_culture:        ru_RU
 
 #all:
 #  .actions:

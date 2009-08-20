@@ -3,3 +3,18 @@ generator:
   param:
     model_class:      JobType
     theme:            default
+
+    action:   ~
+    fields:
+      name:    { name: Название}
+    
+    list:
+      title:  Типы работ
+      display: [=name]
+      object_actions:
+        _edit:        ~
+        _delete:      ~
+      
+    edit:
+      title:  Добавление/редактирование типа работ
+      display: [name]

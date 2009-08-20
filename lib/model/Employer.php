@@ -9,16 +9,12 @@ class Employer extends BaseEmployer
 	
 	public function getGenderText()
 	{
-		switch ($this->getGender()) {
-			case 1:
-				return 'мужской';
-			
-			case 2:
-				return 'женский';
-			
-			default:
-				return 'не важно';
-		}
+		return EmployerPeer::getGenderFromIndex($this->getGender());
+	}
+	
+	public function setGenderText($value)
+	{
+		$this->setGender(EmployerPeer::getGenderFromValue($value));
 	}
 	
 	public function getProvidePlaceText()

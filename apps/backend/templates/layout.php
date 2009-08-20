@@ -7,14 +7,40 @@
     <link rel="shortcut icon" href="/favicon.ico" />
   </head>
   <body>
+  <div id="navigation_hover">Навигация</div>
   <div id="navigation">
     <ul style="list-style: none;">
-      <li><?php echo link_to('Manage workers', 'worker/index') ?></li>
-      <li><?php echo link_to('Manage employers', 'employer/index') ?></li>
+      <li><?php echo link_to('Соискатели', 'worker/index') ?></li>
+      <li><?php echo link_to('Работодатели', 'employer/index') ?></li>
+      <li><hr /></li>
+      <li><?php echo link_to('Регионы', 'region/index') ?></li>
+      <li><?php echo link_to('Отрасли', 'branch/index') ?></li>
+      <li><?php echo link_to('Cпециальности', 'speciality/index') ?></li>
+      <li><?php echo link_to('Типы работы', 'job_type/index') ?></li>
     </ul>
   </div>
   <div id="content">
     <?php echo $sf_content ?>
   </div>
+  <script type="text/javascript">
+  <!--
+    $(document).ready( function() {
+      menuHideTimeout = 0;
+      $('#navigation_hover, #navigation').mouseover( function () { 
+        var submenu = $('#navigation');
+        if (menuHideTimeout != 0) { clearTimeout(menuHideTimeout); menuHideTimeout = 0; }
+        if (submenu.is(":hidden")) { submenu.slideDown(); }
+      }).mouseout( function () {
+        if (menuHideTimeout != 0) { clearTimeout(menuHideTimeout); }
+        menuHideTimeout = setTimeout("$('#navigation').slideUp();", 750);
+      });
+
+    $('#navigation a').click(function() {
+      $('#navigation').fadeOut('fast');
+      return true;
+    });
+   });
+  //-->
+  </script>
   </body>
 </html>

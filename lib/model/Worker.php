@@ -7,9 +7,19 @@ class Worker extends BaseWorker
 		return ($i == 1) ? 'да' : 'нет';
 	}
 	
+	public function getFullName()
+	{
+		return $this->getSurname()." ".$this->getName()." ".$this->getFather();
+	}
+	
 	public function getGenderText()
 	{
-		return ($this->getGender() == 1) ? 'мужской' : 'женский';
+		return WorkerPeer::getGenderFromIndex($this->getGender());
+	}
+	
+	public function setGenderText($value)
+	{
+		$this->setGender(WorkerPeer::getGenderFromValue($value));
 	}
 	
 	public function getNeedPlaceText()

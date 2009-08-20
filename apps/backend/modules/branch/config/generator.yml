@@ -3,3 +3,18 @@ generator:
   param:
     model_class:      Branch
     theme:            default
+
+    action:   ~
+    fields:
+      name:    { name: Наименование }
+    
+    list:
+      title:  Отрасли
+      display: [=name]
+      object_actions:
+        _edit:        ~
+        _delete:      ~
+      
+    edit:
+      title:  Добавление/редактирование отрасли
+      display: [name]

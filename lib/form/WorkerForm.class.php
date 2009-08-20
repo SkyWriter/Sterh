@@ -29,7 +29,7 @@ class WorkerForm extends BaseWorkerForm
     
     $this->widgetSchema['gender'] = new sfWidgetFormChoice(array(
       'expanded' => true,
-      'choices'  => array(1 => 'Мужской', 2 => 'Женский'),
+      'choices'  => WorkerPeer::getGenderChoices(),
     ));
     
     $this->widgetSchema->setLabels(array( 

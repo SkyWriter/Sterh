@@ -3,3 +3,18 @@ generator:
   param:
     model_class:      Region
     theme:            default
+
+    action:   ~
+    fields:
+      name:    { name: Название}
+    
+    list:
+      title:  Регионы
+      display: [=name]
+      object_actions:
+        _edit:        ~
+        _delete:      ~
+      
+    edit:
+      title:  Добавление/редактирование региона
+      display: [name]

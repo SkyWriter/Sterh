@@ -3,3 +3,51 @@ generator:
   param:
     model_class:      Worker
     theme:            default
+
+    action:   ~
+    fields:
+      full_name:    { name: ФИО }
+      surname:      { name: Фамилия }
+      name:         { name: Имя }
+      father:       { name: Отчество }
+      age:          { name: Возраст }
+      gender:       { name: Пол }
+      gender_text:  { name: Пол }
+      citizenship:  { name: Гражданство }
+      citizenship_id: { name: Гражданство }
+      region:       { name: Регион }
+      region_id:    { name: Регион }
+      address:      { name: Адрес }
+      phone:        { name: Телефон }
+      email:        { name: Email }
+      target_regions: { name: Регион работы }
+      branch:       { name: Отрасль }
+      branch_id:    { name: Отрасль }
+      speciality:   { name: Специальность }
+      speciality_id: { name: Специальность }
+      salary:       { name: Зарплата от }
+      schedule:     { name: График }
+      job_type:     { name: Тип работы }
+      job_type_id:  { name: Тип работы }
+      start_date:   { name: Готов работать с }
+      need_place:   { name: Требуется проживание }
+      need_place_text: { name: Требуется проживание }
+      has_permission: { name: Есть разрешение на работу }
+      has_permission_text: { name: Есть разрешение на работу }
+      need_registration: { name: Требуется регистрация }
+      need_registration_text: { name: Требуется регистрация }
+      languages:    { name: Знание языков }
+      computer:     { name: Знание ПК }
+      additional_info: { name: Дополнительная информация }
+      password:     { name: Пароль }
+    list:
+      title:  Список соискателей
+      display:      [=full_name, age, gender_text, citizenship, region, address, phone, email, target_regions, branch, speciality, salary, schedule, job_type, start_date, need_place_text, has_permission_text, need_registration_text, languages, computer, additional_info, password]
+      object_actions:
+        _edit:        ~
+        _delete:      ~
+    edit:
+      title:  Редактирование соискателя
+      display: [surname, name, father, age, _gender, citizenship_id, region_id, address, phone, email, target_regions, branch_id, speciality_id, salary, schedule, job_type_id, start_date, _need_place, _has_permission, _need_registration, languages, computer, additional_info, password]
+      fields:
+        start_date:   { type: input_date_tag, params: rich=on }

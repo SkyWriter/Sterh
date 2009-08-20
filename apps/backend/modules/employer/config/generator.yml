@@ -3,3 +3,47 @@ generator:
   param:
     model_class:      Employer
     theme:            default
+
+    action:   ~
+    fields:
+      title:                { name: Наименование }
+      contact_person:       { name: Контактное лицо }
+      address:              { name: Адрес }
+      phone:                { name: Телефон }
+      email:                { name: Email }
+      web:                  { name: Вебсайт }
+      region:               { name: Регион }
+      region_id:            { name: Регион }
+      speciality:           { name: Специальность }
+      speciality_id:        { name: Специальность }
+      target_regions:       { name: Регион работы }
+      salary:               { name: Зарплата до }
+      how_many_needed:      { name: Кол-во работников }
+      schedule:             { name: График }
+      start_date:           { name: Начало работы }
+      provide_place:        { name: Предоставляет проживание }
+      provide_place_text:   { name: Предоставляет проживание }
+      description:          { name: Описание вакансии }
+      make_permission:      { name: Оформляет разрешение на работу }
+      make_permission_text: { name: Оформляет разрешение на работу }
+      make_registration:    { name: Оформляет регистрацию }
+      make_registration_text: { name: Оформляет регистрацию }
+      education:            { name: Требуемое образование }
+      experience:           { name: Требумый опыт }
+      languages:            { name: Знание языков }
+      computer:             { name: Знание ПК }
+      age_start:            { name: Возраст от }
+      age_end:              { name: Возраст до }
+      gender:               { name: Пол }
+      gender_text:          { name: Пол }
+      additional_info:      { name: Дополнительная информация }
+      password:             { name: Пароль }
+    list:
+      title:  Список работодателей
+      display: [=title, contact_person, phone, email, region, speciality, target_regions, salary, how_many_needed, schedule, start_date, provide_place_text, description, make_permission_text, make_registration_text, education, experience, languages, computer, age_start, age_end, gender_text, additional_info, password]
+      object_actions:
+        _edit:        ~
+        _delete:      ~
+    edit:
+      title:  Редактирование работодателя
+      display: [title, contact_person, address, phone, email, web, region_id, speciality_id, target_regions, salary, how_many_needed, schedule, start_date, _provide_place, description, _make_permission, _make_registration, education, experience, languages, computer, age_start, age_end, _gender, additional_info, password]

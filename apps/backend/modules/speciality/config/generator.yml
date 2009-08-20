@@ -3,3 +3,18 @@ generator:
   param:
     model_class:      Speciality
     theme:            default
+
+    action:   ~
+    fields:
+      name:    { name: Название}
+    
+    list:
+      title:  Специальности
+      display: [=name]
+      object_actions:
+        _edit:        ~
+        _delete:      ~
+      
+    edit:
+      title:  Добавление/редактирование специальности
+      display: [name]

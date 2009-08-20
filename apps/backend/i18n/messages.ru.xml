@@ -1,0 +1,46 @@
+<?xml version="1.0" ?>
+<xliff version="1.0">
+  <file original="global" source-language="en_US" datatype="plaintext">
+    <body>
+      <trans-unit id="1">
+        <source>create</source>
+        <target>создать</target>
+      </trans-unit>
+      
+      <trans-unit id="2">
+        <source>list</source>
+        <target>список</target>
+      </trans-unit>
+      
+      <trans-unit id="3">
+        <source>save</source>
+        <target>сохранить</target>
+      </trans-unit>
+      
+      <trans-unit id="4">
+        <source>save and add</source>
+        <target>сохранить</target>
+      </trans-unit>
+      
+      <trans-unit id="5">
+        <source>delete</source>
+        <target>удалить</target>
+      </trans-unit>
+      
+      <trans-unit id="6">
+        <source>Are you sure?</source>
+        <target>Вы уверены?</target>
+      </trans-unit> 
+      
+      <trans-unit id="7">
+        <source>Actions</source>
+        <target>Действия</target>
+      </trans-unit>    
+      
+      <trans-unit id="8">
+        <source>edit</source>
+        <target>редактировать</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

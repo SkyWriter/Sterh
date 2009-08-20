@@ -70,3 +70,42 @@ table th {
 	width: 25%;
 	padding-right: 15px;
 }
+
+body {
+	font-family: Tahoma;
+}
+
+#sf_admin_container .content label {
+	float: none;
+	display: inline;
+	padding: 0 5px;
+}
+
+#navigation_hover {
+	background: yellow;
+	border: 1px solid #aaa;
+	width: 120px;
+	padding: 5px;
+	text-align: center;
+}
+
+#navigation {
+	display: none;
+	position: absolute;
+	background: white;
+	border: 1px solid #aaa;
+	width: 150px;
+	margin: 0; padding: 0;
+}
+
+#navigation li a, #navigation li a {
+	color: black;
+	display: block;
+	padding: 3px 5px;
+	text-decoration: none;
+}
+
+#navigation li a:hover {
+	background: #CCCCFF;
+	color: white;
+}
